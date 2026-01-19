@@ -1,0 +1,150 @@
+/* Fuente Poppins Regular */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../agenciaViajes/fonts/Poppins-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Poppins Bold */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../agenciaViajes/fonts/Poppins-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Poppins Italic */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../agenciaViajes/fonts/Poppins-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    background-color: #83b0bc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    position: relative; 
+    padding: 40px 0;
+}
+
+nav img {
+    height: 70px;
+    margin: 10px 20px;
+    position: absolute;
+    left: 20px;
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;  
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+footer {
+    width: 100%;
+    background-color: #83b0bc; 
+    overflow: hidden;
+}
+
+#logo_ubi{
+    height: 45px;
+    width: 30px;
+    float: left;
+    margin-left: 80px;
+}
+
+#logo_footer {
+    float: left;
+    height: 200px;
+    padding: 20px 30px 20px 20px;
+    margin-top: 120px;
+}
+
+footer section {
+    float: left;
+    width: 28%;
+    text-align: center;
+    margin-top: 120px;
+}
+
+footer section a img{
+    height: 60px;
+    width: 60px;
+    margin: 15px;
+}
+
+#redes a{
+    display: inline-block; /*asi no salen lineas*/
+}
+
+#direccion p{
+    line-height: 25px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+iframe{
+    width: 250px;
+    height: 200px;
+    margin-bottom: 80px;
+    border-radius: 5%;
+    margin-left: 110px;
+}
+
+.clear{
+    clear: both;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 48px;
+}
+
+h1 + h2{
+    font-size: 50px;
+    justify-self: center;
+    margin-top: 60px;
+}
+
+a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #385E68;
+    /* color: #D3E3E7; */
+    font-weight: bold;
+}

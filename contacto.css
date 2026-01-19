@@ -1,0 +1,105 @@
+/* Sección contacto */
+#contacto {
+    position: relative;      
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("imagenes/fondoFormulario.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 0;              /* queda por debajo del nav */
+}
+
+/* Capa de opacidad */
+#contacto::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;             /* evita tapar el nav */
+}
+
+/* Formulario */
+#contacto form {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #d3e3e766;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 50px;
+}
+
+#contacto form :not(h2) {
+    margin-left: 60px; 
+}
+
+
+form h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+form input:not([type="radio"]), form textarea, form select{
+    background-color: rgb(224, 224, 224);
+    border-radius: 3px;
+    width: 300px;
+    height: 30px;
+    border: none;
+}
+
+form select{
+    margin-bottom: 15px;
+}
+
+#telefono{
+    width: 150px;
+}
+
+#mensaje{
+    height: 100px;
+    resize: none; /*para no poder cambiarlo de tamaño*/
+}
+
+#botonEnviar{
+    font-family: 'Poppins';
+    background-color: #385E68;
+    color: aliceblue;
+    border: none;
+}
+
+#botonEnviar:hover{
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #94927b;
+    color: #D3E3E7;
+}
+
+
+.radio-group {
+    display: flex;
+    gap: 0px;
+    margin-bottom: 15px;
+    margin-right: 300px;
+    margin-left: 0px;
+}
+
+.radio-group label {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-right: -325px;
+}
