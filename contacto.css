@@ -1,4 +1,3 @@
-/* Sección contacto */
 #contacto {
     position: relative;      
     min-height: 100vh;
@@ -13,22 +12,24 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    z-index: 0;              /* queda por debajo del nav */
+    z-index: 0;/* queda por debajo del nav */
 }
 
-/* Capa de opacidad */
+/* para ponerle opacidad */
 #contacto::before {
+    /* obligatorio para q el pseudoelmnto exista */
     content: "";
     position: absolute;
-    inset: 0;
+    /*== top 0 right 0 left 0 bottom 0*/
+    inset: 0; 
 
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: -1;             /* evita tapar el nav */
+    z-index: -1; /* evita tapar el nav */
 }
 
-/* Formulario */
 #contacto form {
     position: relative;
+    /* formulario por delante xra q no le tapa la capa opaca */
     z-index: 1;
 
     display: flex;
@@ -83,7 +84,7 @@ form select{
 
 #botonEnviar:hover{
     font-weight: bold;
-    cursor: pointer;
+    cursor: pointer; /*el raton sera una manita*/
     background-color: #94927b;
     color: #D3E3E7;
 }

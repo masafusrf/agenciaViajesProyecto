@@ -1,7 +1,7 @@
 #viajes {
     display: flex;
     flex-direction: column;
-    gap: 50px; /* espacio entre filas */
+    gap: 50px; /*espacio entre filas */
     background-color: aliceblue;
 }
 
@@ -12,16 +12,16 @@ h1{
 }
 
 #viajes article {
-    width: 45%;             /* ocupa menos del 50% para poder moverlo */
+    width: 45%;/* ocupa menos del 50 para poder moverlo */
     margin: 50px 50px 50px 50px;
 }
 
-/* Artículos impares: alineados a la izquierda */
+/*los impares a la izq*/
 #viajes article:nth-child(even) {
     align-self: flex-start;
 }
 
-/* Artículos pares: alineados a la derecha */
+/*los pares a la dcha*/
 #viajes article:nth-child(odd) {
     align-self: flex-end;
 }
@@ -35,16 +35,17 @@ h1{
     margin-top: 10px;
 }
 
-/* Imágenes más responsivas */
 #viajes article img {
     width: 100%;
     height: auto;
     border-radius: 2px;
     display: block;
     margin-top: 10px;
+    /* transicion para q la imagen se haga mas grande con transicion y no de golpe */
     transition: transform 0.3s ease;
 }
 
 #viajes article img:hover{
+    /* lo grande que se hara la img dsps de la transicion */
     transform: scale(1.05);
 }

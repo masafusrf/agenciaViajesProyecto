@@ -1,4 +1,6 @@
-/* Fuente Poppins Regular */
+/* importo fuente de google fonts. uso la normal y la negrita */
+
+/*Poppins Regular*/
 @font-face {
     font-family: 'Poppins';
     src: url('../agenciaViajes/fonts/Poppins-Regular.woff2') format('woff2');
@@ -7,20 +9,12 @@
 }
 
 
-/* Poppins Bold */
+/*Poppins Bold*/
 @font-face {
     font-family: 'Poppins';
     src: url('../agenciaViajes/fonts/Poppins-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
-}
-
-/* Poppins Italic */
-@font-face {
-    font-family: 'Poppins';
-    src: url('../agenciaViajes/fonts/Poppins-Italic.woff2') format('woff2');
-    font-weight: 400;
-    font-style: italic;
 }
 
 body{
@@ -38,7 +32,9 @@ nav {
     background-color: #83b0bc;
     display: flex;
     flex-direction: row;
+    /* lo pongo al centro */
     justify-content: center;
+    /* alineo todo al centro para que quede alineado */
     align-items: center; 
     position: relative; 
     padding: 40px 0;
@@ -47,6 +43,7 @@ nav {
 nav img {
     height: 70px;
     margin: 10px 20px;
+    /* muevo la imagen libremente */
     position: absolute;
     left: 20px;
     height: 70px;
@@ -56,6 +53,7 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    /* los ul en fila */
     display: flex;
     flex-direction: row;
     gap: 30px;  
@@ -71,12 +69,14 @@ nav ul li a {
 footer {
     width: 100%;
     background-color: #83b0bc; 
+    /* el footer se adapta al contenido que tiene */
     overflow: hidden;
 }
 
 #logo_ubi{
     height: 45px;
     width: 30px;
+    /* flotas la img a la izq */
     float: left;
     margin-left: 80px;
 }
@@ -89,6 +89,7 @@ footer {
 }
 
 footer section {
+    /* floatamos cada seccion a la izq para que queden al lado */
     float: left;
     width: 28%;
     text-align: center;
@@ -106,6 +107,7 @@ footer section a img{
 }
 
 #direccion p{
+    /* movemos la altura del p */
     line-height: 25px;
     margin: 0;
     margin-bottom: 10px;
@@ -115,21 +117,25 @@ iframe{
     width: 250px;
     height: 200px;
     margin-bottom: 80px;
+    /* borde redondeado */
     border-radius: 5%;
     margin-left: 110px;
 }
 
 .clear{
+    /* limpiamos los position */
     clear: both;
 }
 
 h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    /* espacio entre letras */
     letter-spacing: 2px;
     font-size: 48px;
 }
 
+/* h2 hijos directos de h1 */
 h1 + h2{
     font-size: 50px;
     justify-self: center;

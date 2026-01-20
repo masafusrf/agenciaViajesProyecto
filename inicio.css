@@ -1,32 +1,30 @@
-/* Contenedor de inicio */
 #inicio {
-    position: relative;        /* para superponer texto si quieres */
+    position: relative;/* para poder superponer texto*/
     width: 100%;
-    height: 100%;              
-    overflow: hidden;          /* evita que la imagen sobresalga */
+    height: 100%;            
 }
 
-/* Imagen de inicio */
 #fotoInicio {
-    width: 100%;               /* ocupa todo el ancho del contenedor */
-    height: 100%;              /* ocupa toda la altura del contenedor */
-    object-fit: cover;         /* recorta o ajusta para llenar sin deformar */
-    display: block;
+    width: 100%;/* ocupa todo el ancho*/
+    height: 100%;/* ocupa todo el alto*/
+    object-fit: cover;
+    /*para que la img se quede fija*/         
+    display: block; 
 }
 
-/* Texto encima de la imagen */
 #inicio h1 {
-    position: absolute;        /* lo colocamos sobre la imagen */
-    top: 50%;                  /* centrado vertical */
-    left: 50%;                 /* centrado horizontal */
+    position: absolute;/*para poner el h1 encima de la img*/
+    top: 50%; /*centrar vertical*/
+    left: 50%;/*centrar horixontal*/
     padding-right: 15px;
     color: aliceblue;
     font-size: 48px;
-    text-align: end;
+     text-align: end; /*el txto empieza al final */
     font-family: 'Poppins', sans-serif;
 }
 
 #home{
+    /* lo  hago flex para poder mover dsps los articles con flex */
     display: flex;
     flex-direction: row;
     margin: 80px 0px 80px 160px;
@@ -35,6 +33,7 @@
 
 #galeria h2{
     display: flex;
+    /* centro el titulo */
     justify-content: center;
 }
 
@@ -51,5 +50,6 @@
 
 #sobre-nosotros p{
     margin: 15px 200px 20px 200px;
+    /* justifico el texto */
     text-align: justify;
 }
